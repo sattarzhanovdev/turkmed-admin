@@ -1,0 +1,75 @@
+.statistic{
+  margin-top: 33px;
+  position: relative;
+  h1{
+    margin: 0;
+    font-size: 35.108px;
+  }
+  .block{
+    width: 815.152px;
+    height: 312.676px;
+    margin-top: 21px;
+    padding: 26px;
+    background: linear-gradient(46deg, rgba(0, 126, 133, 0.33) 0%, rgba(0, 126, 133, 0.34) 39.10%, #007E85 100%);
+    border-radius: 16.386px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .left{
+      h2{
+        font-size: 24.58px;
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 25px;
+      }
+      .new__patient{
+        width: 219.604px;
+        height: 122.753px;
+        flex-shrink: 0;
+        border-radius: 18.019px;
+        background: #FFFFFF8C;
+        padding: 16px;
+        filter: drop-shadow(0px 27.490896224975586px 27.490896224975586px rgba(0, 0, 0, 0.15));
+        h3{
+          margin: 0;
+          margin-bottom: 30px;
+          font-size: 18.019px;
+          text-transform: capitalize;
+          font-weight: 500;
+
+        }
+        .down{
+          width: 219.604px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h1{
+            font-size: 50px;
+            font-weight: 600;
+            margin: 0;
+          }
+          div{
+            width: 49px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #DFFDDD;
+            filter: drop-shadow(0px 35px 25px rgba(0, 0, 0, 0.20));
+            position: relative;
+            right: -30px;
+            border-radius: 12.646px;
+          }
+        }
+      }
+    }
+    .right{
+      position: absolute;
+      bottom: -5px;
+      right: 25px;
+      img{
+        width: 500px;
+      }
+    }
+  }
+}

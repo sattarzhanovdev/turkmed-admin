@@ -1,0 +1,38 @@
+.sidebar{
+  width: 131px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  .logo{
+    margin-top: 102px;
+    a{
+      img{
+        width: 85px;
+        height: auto;
+      }
+    }
+  }
+  .list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 100px;
+    gap: 35px;
+    li{
+      padding: 14px 16px;
+      list-style: none;
+      &.active{
+        border-radius: 8.193px;
+        background: rgba(255, 255, 255, 0.40);
+      }
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}

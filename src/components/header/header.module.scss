@@ -1,0 +1,42 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .search{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    input{
+      width: 600px;
+      height: 48px;
+      padding-left: 15px;
+      border-radius: 16px;
+      position: relative;
+      background: #E5E5E5;
+      border: 0;
+      outline: none;
+      font-weight: 500;
+    }
+    img{
+      position: absolute;
+      right: 24px;
+    }
+  }
+  .profile{
+    width: 144.4px;
+    height: 57.35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16.39px;
+    border: 1.024px solid #D9D9D9;
+    cursor: pointer;
+    img{
+      width: 36px;
+      height: 36px;
+      border-radius: 50px;
+    }
+  }
+}

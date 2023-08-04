@@ -1,0 +1,15 @@
+.main{
+  width: 86%;
+  height: 100vh;
+  background: #F8F8F8;
+  border-radius: 64px 0 0 64px;
+  padding: 40px;
+  position: fixed;
+  right: 0;
+  overflow-y: scroll;
+  .statistic{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
