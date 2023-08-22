@@ -20,7 +20,7 @@ const Appointments = () => {
                 </div>
               </div>
               <div className={c.right}>
-                <p>{item.full_name}</p>
+                <p>{item.full_name} - {item.sex}</p>
                 <p>{item.time.slice(0, 10)} | {item.time.slice(11, 16)} | {doctors?.find(value => value.id === item.doctor).full_name}</p> 
               </div>
             </div>

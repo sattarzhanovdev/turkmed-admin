@@ -5,6 +5,7 @@
   .search{
     width: 600px;
     position: relative;
+    padding: 40px;
     .into{
       display: flex;
       align-items: center;
@@ -26,7 +27,7 @@
       }
     }
     .result{
-      width: 97%;
+      width: 580px;
       position: absolute;
       z-index: 10;
       background: #007E85;
@@ -81,6 +82,8 @@
     gap: 16px;
     border-radius: 16.39px;
     border: 1.024px solid #D9D9D9;
+    position: relative;
+    right: 40px;
     cursor: pointer;
     img{
       width: 36px;
