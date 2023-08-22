@@ -1,88 +1,32 @@
 import React from 'react'
 import c from './appointments.module.scss'
+import { UseGetAppointments, UseGetDoctors } from '../../helpers'
 
 const Appointments = () => {
+  const { appointments } = UseGetAppointments()
+  const { doctors } = UseGetDoctors()
+
   return (
     <div className={c.appointments}>
-      <h2>Напоминания</h2>
+      <h2>Приёмы</h2>
       <div className={c.notifications}>
-        <div className={c.notification}>
-          <div className={c.left}>
-            <div>
-              <p>М</p>
+        {
+          appointments ?
+          appointments.map((item, i) => (
+            <div className={c.notification} key={i}>
+              <div className={c.left}>
+                <div>
+                  <p>{item.full_name.split(' ')[1]?.slice(0,1)}</p>
+                </div>
+              </div>
+              <div className={c.right}>
+                <p>{item.full_name}</p>
+                <p>{item.time.slice(0, 10)} | {item.time.slice(11, 16)} | {doctors?.find(value => value.id === item.doctor).full_name}</p> 
+              </div>
             </div>
-          </div>
-          <div className={c.right}>
-            <p>Прием: Саттаржанов Даниел</p>
-            <p>3 августа | 16:00</p>
-          </div>
-        </div>
-        <div className={c.notification}>
-          <div className={c.left}>
-            <div>
-              <p>М</p>
-            </div>
-          </div>
-          <div className={c.right}>
-            <p>Прием: Саттаржанов Даниел</p>
-            <p>3 августа | 16:00</p>
-          </div>
-        </div>
-        <div className={c.notification}>
-          <div className={c.left}>
-            <div>
-              <p>М</p>
-            </div>
-          </div>
-          <div className={c.right}>
-            <p>Прием: Саттаржанов Даниел</p>
-            <p>3 августа | 16:00</p>
-          </div>
-        </div>
-        <div className={c.notification}>
-          <div className={c.left}>
-            <div>
-              <p>М</p>
-            </div>
-          </div>
-          <div className={c.right}>
-            <p>Прием: Саттаржанов Даниел</p>
-            <p>3 августа | 16:00</p>
-          </div>
-        </div>
-        <div className={c.notification}>
-          <div className={c.left}>
-            <div>
-              <p>М</p>
-            </div>
-          </div>
-          <div className={c.right}>
-            <p>Прием: Саттаржанов Даниел</p>
-            <p>3 августа | 16:00</p>
-          </div>
-        </div>
-        <div className={c.notification}>
-          <div className={c.left}>
-            <div>
-              <p>М</p>
-            </div>
-          </div>
-          <div className={c.right}>
-            <p>Прием: Саттаржанов Даниел</p>
-            <p>3 августа | 16:00</p>
-          </div>
-        </div>
-        <div className={c.notification}>
-          <div className={c.left}>
-            <div>
-              <p>М</p>
-            </div>
-          </div>
-          <div className={c.right}>
-            <p>Прием: Саттаржанов Даниел</p>
-            <p>3 августа | 16:00</p>
-          </div>
-        </div>
+          )) : 
+          null
+        }
       </div>
     </div>
   )
